@@ -41,10 +41,22 @@ namespace actuatorSimulation
             {
                 // update the position
                 base.Position = value;
+
                 // update the currentValue property
-                CurrentValue = Range[0] + (Range[1] - Range[0]) * (Position / EndPosition);
+                // !!! the Range property is added to the derived class
+                // !!! as the Position property is updated in the base class constructor
+                // !!! it is set before Range property initialization which can be null.
+                if (Range != null)
+                {
+                    CurrentValue = Range[0] + (Range[1] - Range[0]) * (Position / EndPosition);
+                }
+                
             }
         }
+
+
+
+
 
         /// <summary>
         /// Constructor with parameters
