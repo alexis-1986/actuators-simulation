@@ -1,2 +1,2 @@
 # actuators-simulation
-![actuators](https://user-images.githubusercontent.com/65492080/95582700-49a79600-0a3b-11eb-8b04-36fb9bc4aafd.PNG)
+![actuators](https://user-images.githubusercontent.com/65492080/95583508-86c05800-0a3c-11eb-89f9-1a2f9ea612fb.PNG)
